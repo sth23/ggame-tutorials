@@ -1,8 +1,6 @@
 from ggame import App, RectangleAsset, ImageAsset, SoundAsset
 from ggame import LineStyle, Color, Sprite, Sound
 
-
-
 myapp = App()
 
 # define colors and line style
@@ -22,5 +20,17 @@ ball.scale = 0.1
 ball.direction = 1
 ball.go = True
 
-myapp.run()
+def reverse(b):
+    b.direction *= -1
+
+def step():
+    if ball.go:
+        ball.x += ball.direction
+        if ball.x + ball.width > myapp.width or ball.x <0:
+            ball.x -= ball.direction
+            reverse(ball)
+
+
+
+myapp.run(step)
 
