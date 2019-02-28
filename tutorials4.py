@@ -6,6 +6,8 @@ class SpaceShip(Sprite):
     """
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,65,125), 4, 'vertical')
 
+    print("test")
+
     def __init__(self, position):
         super().__init__(SpaceShip.asset, position)
         self.vx = 1
@@ -48,8 +50,6 @@ class SpaceGame(App):
         noline = LineStyle(0, black)
         bg_asset = RectangleAsset(self.width, self.height, noline, black)
         bg = Sprite(bg_asset, (0,0))
-        
-        print("Test")
         
         SpaceShip((100,100))
         SpaceShip((150,150))
