@@ -68,13 +68,13 @@ class SpaceShip(Sprite):
         self.vx = 0
         
     def moveUpOn(self, event):
-        self.vy += 1
+        self.vy += -1
         
     def moveUpOff(self, event):
         self.vy = 0
         
     def moveDownOn(self, event):
-        self.vy += -1
+        self.vy += 1
         
     def moveDownOff(self, event):
         self.vy = 0
