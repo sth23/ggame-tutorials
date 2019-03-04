@@ -21,10 +21,12 @@ class SpaceShip(Sprite):
         
     def thrustOn(self, event):
         self.thrust = 1
-        self.vx += 0.5
+        self.vr += 0.01
         
     def thrustOff(self, event):
         self.thrust = 0
+        self.vx = 0
+        self.vy = 0
         
     def step(self):
         self.x += self.vx
