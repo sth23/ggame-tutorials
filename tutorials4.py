@@ -6,8 +6,6 @@ class SpaceShip(Sprite):
     """
     asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", Frame(227,0,65,125), 4, 'vertical')
 
-    print("test")
-
     def __init__(self, position):
         super().__init__(SpaceShip.asset, position)
         self.vx = 1
@@ -19,8 +17,12 @@ class SpaceShip(Sprite):
         SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
         
+        self.fxcenter = 0.5
+        self.fycenter = 0.5
+        
     def thrustOn(self, event):
         self.thrust = 1
+        self.vr += 0.01
         
     def thrustOff(self, event):
         self.thrust = 0
@@ -60,3 +62,4 @@ class SpaceGame(App):
             ship.step()
 
 myapp = SpaceGame()
+myapp.run()
