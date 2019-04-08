@@ -24,16 +24,16 @@ class SpaceShip(Sprite):
         #SpaceGame.listenKeyEvent("keyup", "right arrow", self.rotateRightOff)
         
         # Move right/left
-        SpaceGame.listenKeyEvent("keydown", "a", self.moveLeftOn)
-        SpaceGame.listenKeyEvent("keyup", "a", self.moveLeftOff)
-        SpaceGame.listenKeyEvent("keydown", "d", self.moveRightOn)
-        SpaceGame.listenKeyEvent("keyup", "d", self.moveRightOff)
+        #SpaceGame.listenKeyEvent("keydown", "a", self.moveLeftOn)
+        #SpaceGame.listenKeyEvent("keyup", "a", self.moveLeftOff)
+        #SpaceGame.listenKeyEvent("keydown", "d", self.moveRightOn)
+        #SpaceGame.listenKeyEvent("keyup", "d", self.moveRightOff)
         
         # Move up/down
-        SpaceGame.listenKeyEvent("keydown", "w", self.moveUpOn)
-        SpaceGame.listenKeyEvent("keyup", "w", self.moveUpOff)
-        SpaceGame.listenKeyEvent("keydown", "s", self.moveDownOn)
-        SpaceGame.listenKeyEvent("keyup", "s", self.moveDownOff)
+        #SpaceGame.listenKeyEvent("keydown", "w", self.moveUpOn)
+        #SpaceGame.listenKeyEvent("keyup", "w", self.moveUpOff)
+        #SpaceGame.listenKeyEvent("keydown", "s", self.moveDownOn)
+        #SpaceGame.listenKeyEvent("keyup", "s", self.moveDownOff)
         
         self.fxcenter = self.fycenter = 0.45
         
