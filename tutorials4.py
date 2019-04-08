@@ -39,6 +39,7 @@ class SpaceShip(Sprite):
         
     def thrustOn(self, event):
         self.thrust = 1
+        slef.vx += 0.01
         
     def thrustOff(self, event):
         self.thrust = 0
