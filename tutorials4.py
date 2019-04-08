@@ -10,7 +10,7 @@ class SpaceShip(Sprite):
         super().__init__(SpaceShip.asset, position)
         self.vx = 0
         self.vy = 0
-        self.vr = 0.00
+        self.vr = 1
         
         self.thrust = 0
         self.thrustframe = 1
